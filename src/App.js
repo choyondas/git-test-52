@@ -5,6 +5,7 @@ import Header from './components/Header/Header';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
+import NotFound from './components/NotFound/NotFound';
 
 function App() {
   return (
@@ -24,6 +25,13 @@ function App() {
           <Route path="/contact">
             <Contact></Contact>
           </Route>
+          <Route exact path="/">
+            <Home></Home>
+          </Route>
+          <Route>
+            <NotFound></NotFound>
+          </Route>
+
         </Switch>
       </BrowserRouter>
     </div>
