@@ -1,0 +1,13 @@
+
+.header{
+    border: 2px solid red;
+    height: 100px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.selected{
+    color: blue;
+    font-weight: bold;
+    
+}
