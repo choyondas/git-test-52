@@ -6,6 +6,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import NotFound from './components/NotFound/NotFound';
+import Friends from './components/Friends/Friends';
 
 function App() {
   return (
@@ -28,6 +29,12 @@ function App() {
           <Route exact path="/">
             <Home></Home>
           </Route>
+          <Route path="/friends">
+            <Friends></Friends>
+          </Route>
+
+
+
           <Route>
             <NotFound></NotFound>
           </Route>
