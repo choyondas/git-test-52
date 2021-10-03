@@ -10,6 +10,7 @@ import Friends from './components/Friends/Friends';
 import Todos from './components/Todos/Todos';
 import { Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import TeamDetails from './components/TeamDetails/TeamDetails';
 
 function App() {
   return (
@@ -38,12 +39,15 @@ function App() {
           <Route path="/todos">
             <Todos></Todos>
           </Route>
-
-
-
-          <Route>
-            <NotFound></NotFound>
+          <Route path="/details/:id">
+            <TeamDetails></TeamDetails>
           </Route>
+
+
+
+          {/* <Route>
+            <NotFound></NotFound>
+          </Route> */}
 
         </Switch>
       </BrowserRouter>

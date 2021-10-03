@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Form, Stack } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import "./Home.css"
 
 const Home = () => {
@@ -35,9 +36,9 @@ const Home = () => {
                                         <h4>{team.strLeague}</h4>
                                         <p>{team.strStadium}</p>
                                         <p> {team.strGender} </p>
-                                        <Button variant="primary" >
+                                        <Link to={`/details/${team.idTeam}`}> <Button variant="primary" >
                                             Details
-                                        </Button>{' '}
+                                        </Button>{' '}</Link>
                                     </div>
                                 </div>)
                         }
