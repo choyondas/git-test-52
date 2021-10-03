@@ -1,0 +1,10 @@
+.header-div{
+    text-align: center;
+}
+.cart{
+    border: 1px solid orange;
+    margin: 20px;
+    padding: 10px;
+    height: 550px;
+    border-radius: 10px;
+}

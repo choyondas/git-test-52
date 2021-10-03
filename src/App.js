@@ -8,12 +8,14 @@ import Contact from './components/Contact/Contact';
 import NotFound from './components/NotFound/NotFound';
 import Friends from './components/Friends/Friends';
 import Todos from './components/Todos/Todos';
+import { Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div >
       <BrowserRouter>
-
+        <Button variant="primary">Primary</Button>
         <Header></Header>
 
 
