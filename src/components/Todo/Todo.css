@@ -1,0 +1,17 @@
+.todo-div{
+    display: flex;
+    padding: 10px;
+    margin: 30px;
+    align-items: center;
+    box-shadow: 5px 5px 20px rgb(155, 153, 153);
+    border-radius:10px;
+    
+    
+}
+.todo-div:hover{
+    background-color: rgb(211, 235, 229);
+}
+.id{
+    margin-right: 50px;
+    margin-left:10%;
+}

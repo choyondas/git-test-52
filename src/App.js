@@ -7,10 +7,11 @@ import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import NotFound from './components/NotFound/NotFound';
 import Friends from './components/Friends/Friends';
+import Todos from './components/Todos/Todos';
 
 function App() {
   return (
-    <div className="App">
+    <div >
       <BrowserRouter>
 
         <Header></Header>
@@ -31,6 +32,9 @@ function App() {
           </Route>
           <Route path="/friends">
             <Friends></Friends>
+          </Route>
+          <Route path="/todos">
+            <Todos></Todos>
           </Route>
 
 

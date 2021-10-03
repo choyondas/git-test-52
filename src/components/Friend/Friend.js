@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Friend.css"
 const Friend = (props) => {
-    const { id, name, username, email, address, website, phone } = props.friend;
+    const { id, name, username, email, address, website, phone, company } = props.friend;
     console.log(props.friend)
     return (
         <div className="friend-div">
@@ -9,6 +9,8 @@ const Friend = (props) => {
             <h3>email: {email}</h3>
             <h3>phone: {phone}</h3>
             <a href={website}>{website}</a>
+            <p>company: {company.name}</p>
+
 
         </div>
     );
